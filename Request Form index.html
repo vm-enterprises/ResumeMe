@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Writing Services</title>
+    <link rel="stylesheet" href="ResumeMe CSS file.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ResumeMe Writing Services</h1>
+        <form id="resumeForm">
+           <fieldset>
+                <legend>Instuctions:To make things as easy as possible for you, you can upload your old resume and all other information that needs to be added onto it, you can submit below. However, if this is your first resume, we will need you to fill out the entire form. </legend>
+               
+               
+            </fieldset>  
+
+	<fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Employment History</legend>
+                <div id="employment-history">
+                    <div class="employment">
+                        <label for="position">Position:</label>
+                        <input type="text" name="position" required>
+			<label for="Start Date">Start Date:</label>
+                        <input type="text" name="Start Date" required>
+			<label for="End Date">End Date:</label>
+                        <input type="text" name="End Date" required>
+                        <label for="placeWorked">Place Worked:</label>
+                        <input type="text" name="placeWorked" required>
+                        <label for="duties">Duties:</label>
+                        <textarea name="duties" rows="3" required></textarea>
+                    </div>
+                </div>
+                <button type="button" onclick="addEmployment()">Add Another Employment</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Volunteer Experience</legend>
+                <div id="volunteer-experience">
+                    <div class="volunteer">
+                        <label for="volPosition">Position:</label>
+                        <input type="text" name="volPosition" required>
+			<label for="Start Date">Start Date:</label>
+                        <input type="text" name="Start Date" required>
+			<label for="End Date">End Date:</label>
+                        <input type="text" name="End Date" required>
+
+                        <label for="volPlaceWorked">Place Volunteered:</label>
+                        <input type="text" name="volPlaceWorked" required>
+                        <label for="volDuties">Duties:</label>
+                        <textarea name="volDuties" rows="3" required></textarea>
+                    </div>
+                </div>
+                <button type="button" onclick="addVolunteer()">Add Another Volunteering</button>
+            </fieldset>
+
+          
+
+            <fieldset>
+                <legend>Education</legend>
+                <div id="education">
+                    <div class="education-entry">
+                        <label for="school">School:</label>
+                        <input type="text" name="school" required>
+                       <label for="Start Date">Start Date:</label>
+                        <input type="text" name="Start Date" required>
+			<label for="End Date">End Date:</label>
+                        <input type="text" name="End Date" required>
+                        <label for="certificates">Certificates/Diplomas:</label>
+                        <input type="text" name="certificates" required>
+                    </div>
+                </div>
+                <button type="button" onclick="addEducation()">Add Another Education</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Internships/Clubs</legend>
+                <div id="internships/Clubs">
+                    <div class="internship">
+                        <label for="interninternships/Clubs">Internships/Clubs:</label>
+                        <input type="text" name="internSchool" required>
+ 			<label for="position">Position:</label>
+                        <input type="text" name="position" required>
+                       <label for="Start Date">Start Date:</label>
+                        <input type="text" name="Start Date" required>
+			<label for="End Date">End Date:</label>
+                        <input type="text" name="End Date" required>
+ 			<label for="duties">Duties:</label>
+                        <textarea name="duties" rows="3" required></textarea>
+                        <label for="internCertificates">Certificates/Diplomas:</label>
+                        <input type="text" name="internCertificates" required>
+                    </div>
+                </div>
+                <button type="button" onclick="addInternship()">Add Another Internship</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills You Possess for the Desired Job</legend>
+                <label for="Skills">Skills:</label>
+                <textarea id="highlights" name="highlights" rows="4"></textarea>
+            </fieldset>
+
+            <button type="button" onclick="saveProgress()">Save Progress</button>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="ResumeMe Javascript.script.js"></script>
+</body>
+</html>
